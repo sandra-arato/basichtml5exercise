@@ -46,6 +46,23 @@ h1 {
 	margin: 0;
 }
 
+header span {
+	display: none;
+	vertical-align: top;
+	border-radius: 14px;
+	background: url('../image/cart.png') no-repeat;
+	background-position: 26px 4px;
+	background-size: 20px;
+	background-color: #ffc9d8;
+	margin-top: 42px;
+	font-size: 14px;
+	font-weight: 300;
+	text-align: center;
+	padding: 8px 40px 6px 6px;
+	border: 1px solid #ff6390;
+
+}
+
 h2 {
 	font-family: 'Chelsea Market', cursive;
 }
@@ -108,6 +125,10 @@ form {
 	width: 100%;
 	margin: 0 auto;
 	padding: 0.5em;
+}
+
+form ul {
+	display: none;
 }
 
 form p {
@@ -298,6 +319,70 @@ li.twitter:hover {
 		width: 40%;
 		margin-top: 0;
 	}
+
+	/* EXTRA CLASSES FOR BEATUIFUL ENHANCED SITE */
+
+	header.compressed {
+		height: 2.8em;
+
+		-webkit-transition: width 1.2s, height 1.2s;
+    	transition: width 1.2s, height 1.2s;
+	}
+
+	header.compressed h1 {
+		display: inline-block;
+		height: 1.2em;
+		margin-top: 0.3em;
+		vertical-align: top;
+	}
+
+	header.compressed nav {
+		margin-top: 2.6em;
+	}
+
+	header.compressed span {
+		display: inline-block;
+	}
+
+	form ul li {
+		box-sizing: border-box;
+		width: 100%;
+		text-indent: 0;
+		margin: 0;
+		border-radius: 2px;
+		padding: 0.66a48cem;
+		font-size: 14px;
+		font-weight: 300;
+		background: #fff4f7;
+	}
+
+	form ul li:last-child {
+		font-weight: 400;
+		color: #cd003a;
+		cursor: default;
+	}
+
+	form ul li span {
+		display: inline-block;
+		float: right;
+	}
+	
+	form ul li:hover span {
+		font-style: italic;
+	}
+
+	form ul li:last-child:hover span {
+		font-style: normal;
+	}
+
+	form ul li:hover span:before {
+		content: "- ";
+	}
+
+	form ul li:last-child:hover span:before {
+		content: "";
+
+	}
 }
 
 /* ------- TABLE -------*/
@@ -337,3 +422,4 @@ tfoot {
 tfoot td {
 	padding: 0.8em;
 }
+
